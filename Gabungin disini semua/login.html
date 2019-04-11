@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Selamat Datang | GoJabarUKM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- global level css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- end of global level css -->
+    <link href="vendors/iCheck/css/square/blue.css" rel="stylesheet" type="text/css" />
+    <link href="vendors/bootstrapvalidator/css/bootstrapValidator.min.css" rel="stylesheet" />
+    <!-- page level css -->
+    <link rel="stylesheet" type="text/css" href="css/pages/login.css" />
+    <link href="css/pages/login2.css" rel="stylesheet" />
+    <link href="vendors/iCheck/css/minimal/blue.css" rel="stylesheet" />
+    <!-- end of page level css -->
+</head>
+
+<body>
+    <div class="container">
+        <div class="row vertical-offset-100">
+            <div class="col-sm-6 col-sm-offset-3  col-md-5 col-md-offset-4 col-lg-4 col-lg-offset-4">
+                <div id="container_demo">
+                    <a class="hiddenanchor" id="toregister"></a>
+                    <a class="hiddenanchor" id="tologin"></a>
+                    <a class="hiddenanchor" id="toforgot"></a>
+                    <div id="wrapper">
+                        <div id="login" class="animate form">
+                            <form action="#" id="authentication" autocomplete="on" method="post">
+                                <h3 class="black_bg">
+                                    Silahkan Masuk!</h3>
+                                <div class="form-group ">
+                                    <label style="margin-bottom:0;" for="email1" class="uname control-label"> <i class="livicon" data-name="user" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Username
+                                    </label>
+                                    <input id="email1" name="email1" placeholder="Masukkan username Anda" value="" />
+                                    <div class="col-sm-12">
+                                    </div>
+                                </div>
+                                <div class="form-group ">
+                                    <label style="margin-bottom:0;" for="password" class="youpasswd"> <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Kata Sandi
+                                    </label>
+                                    <input type="password" id="password" name="password" placeholder="Masukkan kata sandi Anda" />
+                                    <div class="col-sm-12">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        <input type="checkbox" name="remember-me" id="remember-me" value="remember-me" class="minimal-blue" /> Ingat Saya
+                                    </label>
+                                </div>
+                                <p class="login button">
+                                    <input type="submit" value="Masuk" class="btn btn-success" />
+                                </p>
+                                <p class="change_link">
+                                    <a href="#toforgot" class="btn btn-responsive botton-alignment btn-warning btn-sm">Lupa kata sandi?
+                                    </a>
+                                    <a href="#toregister" id="signup" class="btn btn-responsive botton-alignment btn-success btn-sm pull-right">Belum punya akun
+                                    </a>
+                                </p>
+                            </form>
+                        </div>
+                        <div id="register" class="animate form">
+                            <form action="#" id="register_here" autocomplete="on" method="post">
+                                <h3 class="black_bg">
+                                    Daftar</h3>
+                                 <div class="form-group">
+                                    <label style="margin-bottom:0;" for="username" class="youmail">
+                                        <i class="livicon" data-name="user" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Username
+                                    </label>
+                                    <input id="username" name="username" required type="text" placeholder="Masukkan username Anda" />
+                                </div>
+                                <div class="form-group">
+                                    <label style="margin-bottom:0;" for="first_name" class="youmail">
+                                        <i class="livicon" data-name="user" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Nama
+                                    </label>
+                                    <input id="first_name" name="first_name" required type="text" placeholder="Masukkan nama Anda" />
+                                </div>
+                                <div class="form-group">
+                                    <label style="margin-bottom:0;" for="email" class="youmail">
+                                        <i class="livicon" data-name="mail" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Alamat E-mail
+                                    </label>
+                                    <input id="email" name="email" placeholder="emailAnda@mail.com" />
+                                </div>
+                                <div class="form-group">
+                                    <label style="margin-bottom:0;" for="password" class="youpasswd">
+                                        <i class="livicon" data-name="key" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Kata Sandi
+                                    </label>
+                                    <input id="password1" name="password" required type="password" placeholder="Masukkan kata sandi Anda" />
+                                </div>
+                                <div class="form-group">
+                                    <label style="margin-bottom:0;" for="Alamat" class="youmail">
+                                        <i class="livicon" data-name="home" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Alamat
+                                    </label>
+                                    <input id="Alamat" name="Alamat" required type="text" placeholder="Masukkan alamat Anda" />
+                                </div>
+                                <div class="form-group">
+                                    <label style="margin-bottom:0;" for="Alamat" class="youmail">
+                                        <i class="livicon" data-name="cellphone" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Telepon
+                                    </label>
+                                    <input id="notelp" name="notelp" required type="text" placeholder="Masukkan nomor telepon Anda" />
+                                </div>
+                                
+                                <p class="signin button">
+                                    <input type="submit" class="btn btn-success" value="Daftar" />
+                                </p>
+                                <p class="change_link">
+                                    <a href="#tologin" class="btn btn-responsive botton-alignment btn-warning btn-sm to_register">Kembali
+                                    </a>
+                                </p>
+                            </form>
+                        </div>
+                        <div id="forgot" class="animate form">
+                            <form action="#" id="reset_pw" autocomplete="on" method="post">
+                                <h3 class="black_bg">
+                                    SETEL ULANG KATA SANDI</h3>
+                                <p>
+                                    Masukkan alamat email Anda di bawah ini dan kami akan mengirimkan tautan setel ulang kata sandi khusus ke kotak masuk Anda.
+                                </p>
+                                <div class="form-group">
+                                    <label style="margin-bottom:0;" for="username2" class="youmai">
+                                        <i class="livicon" data-name="mail" data-size="16" data-loop="true" data-c="#3c8dbc" data-hc="#3c8dbc"></i> Alamat email Anda
+                                    </label>
+                                    <input id="username2" name="username2" placeholder="emailAnda@mail.com" />
+                                </div>
+                                <p class="login button reset_button">
+                                    <input type="submit" value="Kirim" class="btn btn-raised btn-success btn-block" />
+                                </p>
+                                <p class="change_link">
+                                    <a href="#tologin" class="btn btn-raised btn-responsive botton-alignment btn-warning btn-sm to_register">Kembali
+                                    </a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- global js -->
+    <script src="js/app.js" type="text/javascript"></script>
+    <!-- end of global js -->
+    <script src="vendors/bootstrapvalidator/js/bootstrapValidator.min.js" type="text/javascript"></script>
+    <script src="js/TweenLite.min.js"></script>
+    <script src="vendors/iCheck/js/icheck.js" type="text/javascript"></script>
+    <script src="js/pages/login2.js" type="text/javascript"></script>
+</body>
+
+</html>
