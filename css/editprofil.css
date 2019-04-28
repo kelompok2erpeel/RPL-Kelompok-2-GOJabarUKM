@@ -5,7 +5,17 @@ body{
     background:#f5f5f5;
 }
 
-
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+}
 
 /*--------------------------------------------------------------
 # Header
@@ -367,6 +377,12 @@ body{
  * Panels
  */
 /*** General styles ***/
+
+#editprofile {
+  width: 100%;
+  position: relative;
+  padding: 200px 0 120px 0;
+}
 .panel {
   box-shadow: none;
 }
@@ -376,7 +392,7 @@ body{
 .panel-title {
   font-size: 17px;
 }
-.panel-title > small {
+#editprofile .panel-title h4 {
   font-size: .75em;
   color: #999999;
 }
@@ -397,6 +413,18 @@ form label {
     color: #999999;
     font-weight: 400;
 }
+
+#editprofile .box {
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
 
 .form-horizontal .form-group {
   margin-left: -15px;
