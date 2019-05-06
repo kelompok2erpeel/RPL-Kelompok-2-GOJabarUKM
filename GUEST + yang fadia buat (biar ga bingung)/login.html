@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="icon" href="img/favicon.png" type="image/png">
-	<title>Daftar | GoJabarUKM</title>
+	<title>Masuk | GoJabarUKM</title>
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="vendors/linericon/style.css">
@@ -32,19 +32,17 @@
     <div class="container">
 
       <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <h1 class="text-light"><a href="#header"><span>NewBiz</span></a></h1> -->
-        <a href="#intro" class="scrollto"><img src="img/logo1.png" alt="" class="img-fluid"></a>
+        <a href="#intro" class="scrollto"><img src="img/logo2.png" alt="" class="img-fluid"></a>
       </div>
 
        <nav class="main-nav float-right d-none d-lg-block">
         <ul>
           <li><a href="#portfolio">Galeri UKM</a></li>
-          <li><a href="#about" class="btn-get-started scrollto">Masuk</a></li>
+          <li><a href="login.html" class="btn-get-started scrollto">Masuk</a></li>
           <li class="drop-down" id="sign-up-option"><a href="#sign-up-option">Daftar</a>
             <ul>
-              <li><a href="#">Daftar Sebagai Tamu</a></li>
-              <li><a href="#">Daftar Sebagai Pemilik UKM</a></li>
+              <li><a href="registration.html">Daftar Sebagai Tamu</a></li>
+              <li><a href="registration.html">Daftar Sebagai Pemilik UKM</a></li>
             </ul>
           </li>
         </ul>
@@ -58,28 +56,27 @@
 	<section class="login_box_area p_120">
 		<div class="container">
 			<div class="row">
-								</div>
-				<div class="col-lg-12">
-					<div class="login_form_inner reg_form">
-						<h3>Buat Akun</h3>
-						<form class="row login_form" action="" method="post" id="contactForm" novalidate="novalidate" required>
+				<div class="col-lg-6">
+					<div class="login_box_img">
+						<img class="img-fluid" src="img/login.jpg" alt="">
+						<div class="hover">
+							<h4>Baru di situs web kami?</h4>
+							<p>Segera daftarkan diri Anda untuk mengetahui lebih banyak</p>
+							<a class="main_btn" href="registration.html">Pemilik UKM</a>
+							<a class="main_btn" href="registration.html">Tamu</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="login_form_inner">
+						<h3>Silahkan Masuk</h3>
+						<form class="row login_form" action="contact_process.php" method="post" id="contactForm" novalidate="novalidate">
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+								<input type="text" class="form-control" id="name" name="name" placeholder="Username / ID UKM">
 							</div>
 							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="name" name="name" placeholder="Nama" required>
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="email" class="form-control" id="email" name="email" placeholder="Alamat Email" required>
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="text" class="form-control" id="password" name="password" placeholder="Kata Sandi" required>
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="password" class="form-control" id="address" name="address" placeholder="Alamat" required>
-							</div>
-							<div class="col-md-12 form-group">
-								<input type="" class="form-control" id="facebook" name="facebook" placeholder="Facebook Link" required>
+								<input type="password" class="form-control" id="pass" name="password" placeholder="Kata Sandi">
+                <span toggle="#pass" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 							</div>
 							<div class="col-md-12 form-group">
 								<div class="creat_account">
@@ -88,7 +85,8 @@
 								</div>
 							</div>
 							<div class="col-md-12 form-group">
-								<button type="submit" value="submit" class="btn submit_btn">Daftar</button>
+								<button href="" type="submit" value="submit" class="btn submit_btn">Masuk</button>
+								<a href="forgotpassword.html">Lupa Kata Sandi?</a>
 							</div>
 						</form>
 					</div>
@@ -98,6 +96,8 @@
 	</section>
 	<!--================End Login Box Area =================-->
 
+
+
 	<!--================ start footer Area  =================-->
 <footer id="footer">
     <div class="footer-top">
@@ -106,23 +106,25 @@
 
           <div class="col-lg-4 col-md-6 footer-info">
             <h3>GoJabarUKM</h3>
-            <p>Situs penyedia informasi terkait Usaha Kecil Menengah di Jawa Barat.</p>
+            <p>Situs penyedia informasi Usaha Kecil Menengah yang ada di Jawa Barat.</p>
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Tautan</h4>
+            <h4>Syarat dan Ketentuan</h4>
             <ul>
-              <li><a href="#about">Tentang Kami</a></li>
-              <li><a href="#sign-up-option">Registrasi Akun</a></li>
-              <li><a href="#">Kebijakan Privasi</a></li>
+              <li><a href="#">Terms of service</a></li>
+              <li><a href="#">Privacy policy</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Hubungi Kami</h4>
             <p>
-              <strong>Phone:</strong> +62 8892 1661 04<br>
-              <strong>Email:</strong> infoUKM@gmail.com<br>
+              Jalan Mengmeng <br>
+              Bogor, Jawa Barat 16680<br>
+              Indonesia <br>
+              <strong>Telepon:</strong> (0251) 5548855 <br>
+              <strong>Email:</strong> gojabarukm@gmail.com<br>
             </p>
 
             <div class="social-links">
